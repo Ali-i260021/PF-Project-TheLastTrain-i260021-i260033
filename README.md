@@ -1,18 +1,17 @@
-# The Last Train - Programming Fundamentals Project (Procedural / No Structs)
+The Last Train
 
-CS-1002: Programming Fundamentals (AI & DS)
+A C++ console game made for our PF semester project.
 
-## Architecture Overview
-This project strictly follows primitive procedural programming concepts:
-- **No Structs / No OOP**: All variables, game statuses, inventory, and building rooms are stored in primitive types (`int`, `char`, `bool`) and multi-dimensional parallel arrays.
-- `include/`: Modular C++ header definitions (`config.h`, `state.h`, `level.h`, `simulator.h`, `physics.h`, `switches.h`, `logger.h`, `util.h`, `viewer_iface.h`).
-- `src/core/`: Modular implementation files.
-- `data/`: Building map (`building.txt`) and configuration (`initial-state.txt`).
-- `out/`: Runtime save states (`savegame.txt`) and session summary reports (`game_summary.txt`).
-- `docs/`: Blueprint diagrams (`Project_Diagram.jpg`) and documentation.
+compile:
+g++ -std=c++17 -Wall -Wextra -Iinclude src/core/*.cpp -o last_train.exe
 
-## Build Instructions (g++ C++17)
-```bash
-g++ -std=c++17 -Wall -Wextra -Iinclude src/core/*.cpp -o last_train
-./last_train
-```
+Run:
+Open last_train.exe.
+
+Testing:
+Use the inputs in test1.txt and test2.txt.
+Run the game twice with the same starting state and inputs to see if the results turn out to be identical.
+
+Group members:
+i260021
+i260033
